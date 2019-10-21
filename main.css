@@ -1,19 +1,3 @@
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-#product-overview {
-  background: url("freedom.jpg");
-  width: 100%;
-  height: 528px;
-  padding: 10px;
-  border: 5px solid black;
-  margin: 10px;
-  /* padding: 20px;
-    border: 2px solid black;
-    margin: 10px; */
-}
-
 .section-title {
   color: #2ddf5c;
   text-align: center;
@@ -68,91 +52,48 @@ body {
   color: #0e4f1f;
 }
 
-.button {
-  background: #0e4f1f;
-  color: #ffffff;
-  padding: 5px;
-  border-radius: 8px;
-  font: inherit;
-  outline: none;
+#key_features {
+  background: #ff1b68;
+  /* margin: 32px; */
+  padding: 16px;
 }
 
-.button:hover,
-.button:active {
-  color: #0e4f1f;
-  background: #ffffff;
-  outline: none;
+#key_features .section-title {
+  color: #ffffff;
+  margin: 32px;
+  padding: 16px;
+}
+
+.key_features_lists {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.key_features_element {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.key_feature_description {
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.key_feature_image {
+  background: #eee7e7;
+  border-radius: 50%;
+  width: 100px;
+  border: 2px solid #d3c2c2;
+  height: 100px;
+  margin: auto;
 }
 
 #product-overview h1 {
   color: white;
   font-family: "Anton", sans-serif;
 }
-
-.main_header {
-  width: 100%;
-  padding: 8px 10px;
-  background: #2ddf5c;
-}
-
-.main_header__brand {
-  color: gray;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 22px;
-  vertical-align: middle;
-}
-
-.main_header > div {
-  display: inline-block;
-}
-
-.main_nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 75px);
-  vertical-align: middle;
-}
-
-.main_nav__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.main_nav__item {
-  display: inline-block;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.main_nav__item > a {
-  color: #0e4f1f;
-  text-decoration: none;
-  padding: 3px 0;
-  font-weight: bold;
-}
-
-.main_nav__item > a:hover,
-.main_nav__item > a:active {
-  color: white;
-  border-bottom: 5px solid white;
-}
-
-.main_nav__item--cta {
-  background: #ff1b68;
-  padding: 8px 16px;
-  color: white;
-  border-radius: 8px;
-}
-
-.main_nav__item--cta a:hover,
-.main_nav__item--cta a:active {
-  color: #ff1b68;
-  background: white;
-  border: none;
-}
-
-/* h1 {
-    font-family: sans-serif;
-} */
