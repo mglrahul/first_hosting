@@ -3,10 +3,15 @@
   text-align: center;
 }
 
+.plan__lists {
+  width: 80%;
+  margin: auto;
+}
+
 .plan {
   background: #bfe7ca;
   display: inline-block;
-  width: 30%;
+  width: 28%;
   text-align: center;
   vertical-align: middle;
   padding: 16px;
