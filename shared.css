@@ -1,14 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 #product-overview {
-  background: url("freedom.jpg");
+  /* background: url("freedom.jpg"); */
+  background: url("images/freedom.jpg") left 10% bottom 20% / cover no-repeat border-box;
+  /* background-image: linear-gradient(blue, red, transparent);
+  background-image: radial-gradient(black, transparent); */
+  /* background-image: url("freedom.jpg");
+  background-size: cover;
+  background-position: left 10% bottom 20%; */
+  /* background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: content-box; */
   width: 100%;
   height: 528px;
   padding: 10px;
-  border: 5px solid black;
-  margin: 10px;
+  margin-top: 43px;
+  position: relative;
+  /* border: 5px solid red; */
 }
 .button {
   background: #0e4f1f;
@@ -32,6 +47,10 @@ body {
   width: 100%;
   padding: 8px 10px;
   background: #2ddf5c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .main_header__brand {
@@ -40,6 +59,13 @@ body {
   font-weight: bold;
   font-size: 22px;
   vertical-align: middle;
+  height: 30px;
+  display: inline-block;
+}
+
+.main_header__brand img {
+  height: 100%;
+  /* width: 20px; */
 }
 
 .main_header > div {
@@ -65,20 +91,20 @@ body {
   margin-right: 16px;
 }
 
-.main_nav__item > a {
+.main_nav__item a {
   color: #0e4f1f;
   text-decoration: none;
   padding: 3px 0;
   font-weight: bold;
 }
 
-.main_nav__item > a:hover,
-.main_nav__item > a:active {
+.main_nav__item a:hover,
+.main_nav__item a:active {
   color: white;
   border-bottom: 5px solid white;
 }
 
-.main_nav__item--cta {
+.main_nav__item--cta a {
   background: #ff1b68;
   padding: 8px 16px;
   color: white;
