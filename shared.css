@@ -7,9 +7,21 @@ body {
   margin: 0;
 }
 
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
 #product-overview {
   /* background: url("freedom.jpg"); */
-  background: url("images/freedom.jpg") left 10% bottom 20% / cover no-repeat border-box;
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") left 10% bottom 85% / cover no-repeat border-box, #ff1b68;
   /* background-image: linear-gradient(blue, red, transparent);
   background-image: radial-gradient(black, transparent); */
   /* background-image: url("freedom.jpg");
@@ -18,10 +30,10 @@ body {
   /* background-repeat: no-repeat;
   background-origin: border-box;
   background-clip: content-box; */
-  width: 100%;
-  height: 528px;
-  padding: 10px;
-  margin-top: 43px;
+  width: 100vw;
+  height: 40vh;
+  padding: 0.6rem;
+  /* margin-top: 2.75rem; */
   position: relative;
   /* border: 5px solid red; */
 }
@@ -45,7 +57,7 @@ body {
 
 .main_header {
   width: 100%;
-  padding: 8px 10px;
+  padding: 0.5rem 0.6rem;
   background: #2ddf5c;
   position: fixed;
   top: 0;
@@ -57,7 +69,7 @@ body {
   color: gray;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.4rem;
   vertical-align: middle;
   height: 30px;
   display: inline-block;
@@ -87,14 +99,14 @@ body {
 
 .main_nav__item {
   display: inline-block;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .main_nav__item a {
   color: #0e4f1f;
   text-decoration: none;
-  padding: 3px 0;
+  padding: 0.2rem 0;
   font-weight: bold;
 }
 
@@ -106,7 +118,7 @@ body {
 
 .main_nav__item--cta a {
   background: #ff1b68;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   color: white;
   border-radius: 8px;
 }
@@ -120,8 +132,8 @@ body {
 
 .main_footer {
   background: #000;
-  margin-top: 48px;
-  padding: 32px;
+  margin-top: 3rem;
+  padding: 2rem;
 }
 
 .main_footer_links {
@@ -133,7 +145,7 @@ body {
 }
 
 .main_footer_link {
-  margin: 0 16px;
+  margin: 0 1rem;
   display: inline-block;
 }
 
